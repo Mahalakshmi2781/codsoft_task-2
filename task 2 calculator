@@ -1,0 +1,27 @@
+def addition(P,Q):
+   return P+Q
+def subtraction(P,Q):
+   return P-Q
+def multiplication(P,Q):
+   return P*Q
+def division(P,Q):
+   return P/Q
+print("Task 2 Calculator")
+print("Please select the operation to perform calculation.")
+print("a.to find sum of two numbers")
+print("b.to find differnce from two numbers")
+print("c.to find the product of two numbers")
+print("d.to find the quotient of two numbers")
+choice=input("Please enter choice(a/b/c/d):")
+num_1=int(input("Please enter the first number: "))
+num_2=int(input("Please enter the second number: "))
+if choice=='a':
+   print(num_1,"+",num_2,"=",addition(num_1,num_2))
+elif choice=='b':
+   print(num_1,"-",num_2,"=",subtraction(num_1,num_2))
+elif choice=='c':
+   print(num_1,"*",num_2,"=",multiplication(num_1,num_2))
+elif choice=='d':
+   print(num_1,"/",num_2,"=",division(num_1,num_2))
+else:
+   print("This is an invalid input")
